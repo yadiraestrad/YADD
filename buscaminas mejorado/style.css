@@ -1,0 +1,55 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.panel {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  margin: 10px 0;
+}
+
+#tablero {
+  display: grid;
+  grid-template-columns: repeat(8, 40px);
+  gap: 2px;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.celda {
+  width: 40px;
+  height: 40px;
+  background-color: #bbb;
+  border: 1px solid #888;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.celda.revelada {
+  background-color: #ddd;
+  cursor: default;
+}
+
+.celda.bandera {
+  background-color: #ffd966;
+}
+
+.celda.minada {
+  background-color: #e57373;
+}
+
+#mensaje {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
